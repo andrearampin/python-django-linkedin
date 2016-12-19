@@ -55,13 +55,7 @@ SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = os.environ.get('SOCIAL_AUTH_LINKEDIN_OAUTH2_KE
 SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = os.environ.get('SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET')
 
 SOCIAL_AUTH_LINKEDIN_OAUTH2_SCOPE = ['r_basicprofile', 'r_emailaddress',]
-SOCIAL_AUTH_LINKEDIN_OAUTH2_FIELD_SELECTORS = ['email-address', 'headline', 'industry']
-SOCIAL_AUTH_LINKEDIN_OAUTH2_EXTRA_DATA = [('id', 'id'),
-                                   ('firstName', 'first_name'),
-                                   ('lastName', 'last_name'),
-                                   ('emailAddress', 'email_address'),
-                                   ('headline', 'headline'),
-                                   ('industry', 'industry')]
+SOCIAL_AUTH_LINKEDIN_OAUTH2_FIELD_SELECTORS = ['first-name', 'headline', 'industry']
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/social/home/'
 SOCIAL_AUTH_LOGIN_URL = '/social'
