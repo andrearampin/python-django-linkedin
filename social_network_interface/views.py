@@ -8,11 +8,11 @@ def login(request):
     return render_to_response('social_network_interface/login.html', context=RequestContext(request))
 
 
-@login_required(login_url='/')
+@login_required(login_url='/social/')
 def home(request):
     return render_to_response('social_network_interface/home.html')
 
 
 def logout(request):
     auth_logout(request)
-    return redirect('/')
+    return redirect('/social/')

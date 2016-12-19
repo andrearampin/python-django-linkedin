@@ -3,6 +3,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^social/', include('social_network_interface.urls')),
+    url(r'^social/', include('social_network_interface.urls', namespace='sni')),
     url('', include('social.apps.django_app.urls', namespace='social')),
 ]
